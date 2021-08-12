@@ -1,16 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Header from './components/header/Header'
+import Banner from './components/banner/Banner';
+//import { Button, Container } from 'react-bootstrap';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Web page Initialized...!
-        </p>
-
-      </header>
+      <Header />
+      <Banner />
     </div>
   );
 }
