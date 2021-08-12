@@ -1,4 +1,5 @@
 @import './fonts';
+@import '~bootstrap/scss/bootstrap.scss';
 
 // colors
 $aliceblue: #EBF7FF;
@@ -10,6 +11,8 @@ $blackperl: #1C1E1F;
 $black: #000000;
 $white: #ffffff;
 $glass: #00000000;
+$blackperl-glass: #1C1E1F50;
+$aliceblue-glass: #EBF7FF50;
 
 $primary: $aliceblue;
 $secondary: $graychateau;
@@ -29,7 +32,7 @@ $paragraph: $asap;
 
 //font sizes
 
-$font-size-1: 4rem;
+$font-size-1: 3rem;
 $font-size-2: 2rem;
 $font-size-3: 1.5rem;
 $paragraph-f: 1rem;

@@ -1,35 +1,39 @@
 @import '../../scss/variables.scss';
 
-.carousel {
-    position: absolute;
-    top: 0;
-    z-index: -1;
+.hero-banner {
+    width: 100%;
 
-    .carousel-indicators {
-        button[data-bs-target] {
-            background-color: $secondary;
-
-            &.active {
-                background-color: $primary;
+    .carousel {
+        position: absolute;
+        top: 0;
+        z-index: -1;
+    
+        .carousel-indicators {
+            button[data-bs-target] {
+                background-color: $secondary;
+    
+                &.active {
+                    background-color: $primary;
+                }
             }
         }
-    }
-
-    .carousel-inner {
-        .carousel-item {
-            .carousel-caption {
-                background: $l-g-caption;
-
-                h5 {
-                    color: $primary;
-                    font-family: $heading;
-                    font-size: $font-size-2;
-                }
-
-                p {
-                    font-family: $asap;
-                    color: $white;
-                    font-size: $paragraph-f;
+    
+        .carousel-inner {
+            .carousel-item {
+                .carousel-caption {
+                    background: $l-g-caption;
+    
+                    h5 {
+                        color: $primary;
+                        font-family: $heading;
+                        font-size: $font-size-2;
+                    }
+    
+                    p {
+                        font-family: $asap;
+                        color: $white;
+                        font-size: $paragraph-f;
+                    }
                 }
             }
         }

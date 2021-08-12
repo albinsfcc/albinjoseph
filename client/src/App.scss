@@ -1,5 +1,22 @@
 @import './scss/variables.scss';
 
+// scrollbar look and feel modification
+html {
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: 0 0 5px $aliceblue-glass;
+    border-radius: 1rem;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: $blackperl-glass;
+    border-radius: .5rem;
+  }
+}
+
 .header {
   background: linear-gradient(180deg, $blackperl 0%, $glass 100%);
 }

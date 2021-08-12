@@ -13,8 +13,8 @@ function Banner() {
             });
         }, [])
         return (
-            <div>
-                <Carousel variant="dark" interval={10000} pause={false} >
+            <div className="hero-banner">
+                <Carousel variant="dark" interval={5000} pause={false} >
                     {
                         bannerData.map((bannerContent) => {
                         return <Carousel.Item key={bannerContent._id}>
