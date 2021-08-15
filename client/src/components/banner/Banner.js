@@ -11,7 +11,7 @@ function Banner() {
                 setBannerData(res)
                 console.log(bannerData)
             });
-        }, [])
+        })
         return (
             <div className="hero-banner">
                 <Carousel variant="dark" interval={5000} pause={false} >

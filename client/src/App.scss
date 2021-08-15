@@ -15,8 +15,18 @@ html {
     background-color: $blackperl-glass;
     border-radius: .5rem;
   }
+  
+  .header {
+    z-index: 2;
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(180deg, $blackperl 0%, $glass 100%);
+  }
+  
 }
 
-.header {
-  background: linear-gradient(180deg, $blackperl 0%, $glass 100%);
-}
+
+  h1, h2, h3, h4, h5 {
+    font-family: $comfortaa;
+    color: $primary;
+  }

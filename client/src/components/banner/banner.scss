@@ -3,11 +3,7 @@
 .hero-banner {
     width: 100%;
 
-    .carousel {
-        position: absolute;
-        top: 0;
-        z-index: -1;
-    
+    .carousel {  
         .carousel-indicators {
             button[data-bs-target] {
                 background-color: $secondary;

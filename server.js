@@ -2,7 +2,7 @@ const express = require('express');
 require('dotenv').config();
 const server = express();
 
-// routes declaration
+// routes
 const content = require('./routes/content');
 
 // DB setup
