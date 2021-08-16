@@ -1,0 +1,28 @@
+.hero-banner {
+    width: 100%;
+    height: 75vh;
+    align-items: center;
+    background: rgb(235,247,255);
+    background: linear-gradient(180deg, $graychateau 0%, $blackperl 100%);
+
+    .col-6 {
+        .left-content {
+            padding: 2rem;
+            text-align: end;
+            background: $aliceblue;
+            width: fit-content;
+            border-radius: 3rem;
+            box-shadow: inset 0 0 5px $black;
+            h5 {
+                color: $salesforce-blue;
+                font-size: $font-size-3;
+            }
+    
+            h2 {
+                font-weight: 800;
+                font-family: $asap;
+                color: $facebook-blue;
+            }
+        }
+    }
+}

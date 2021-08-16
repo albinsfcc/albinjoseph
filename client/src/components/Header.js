@@ -1,5 +1,4 @@
 import React from 'react'
-import './header.scss';
 import {Container, Row, Col, Navbar, Nav} from 'react-bootstrap'
 
 function Header() {

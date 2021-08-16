@@ -1,15 +1,13 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.scss';
-import Header from './components/header/Header';
-import Banner from './components/banner/Banner';
-import Footer from './components/footer/Footer';
-//import { Button, Container } from 'react-bootstrap';
 
+import Header from './components/Header';
+import Footer from './components/Footer';
+import HomeContent from './components/HomeContent';
 function App() {
   return (
     <div className="App">
       <Header />
-      <Banner />
+      <HomeContent />
       <Footer />
     </div>
   );

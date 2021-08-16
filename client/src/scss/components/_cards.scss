@@ -1,0 +1,25 @@
+.home-cards {
+    padding: 2rem;
+    text-align: center;
+    background: $blackperl;
+    padding-bottom: 5rem;
+
+    h3 {
+        padding-bottom: 2rem;
+    }
+
+    .card {
+        border: none;
+        color: $aliceblue;
+        background: transparent;
+        transition: filter 2s;
+        .card-icon {
+            font-size: 7rem;
+        }
+
+        .card-content {
+            font-size: $paragraph-f;
+            font-family: $paragraph;
+        }
+    }
+}

@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import './banner.scss';
 import Carousel from 'react-bootstrap/Carousel';
 
 function Banner() {
@@ -9,11 +8,10 @@ function Banner() {
             .then((res) => res.json())
             .then((res) => {
                 setBannerData(res)
-                console.log(bannerData)
             });
-        })
+        }, [])
         return (
-            <div className="hero-banner">
+            <div className="banner">
                 <Carousel variant="dark" interval={5000} pause={false} >
                     {
                         bannerData.map((bannerContent) => {

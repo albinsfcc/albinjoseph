@@ -1,9 +1,8 @@
-import './footer.scss';
 import React from 'react';
 
 function Footer() {
     const FACEBOOK_URL = "https://www.facebook.com/albinjoseph.dev";
-    const INSTAGRAM_URL = "https://www.instagram.com/the.lost_alien/";
+    const INSTAGRAM_URL = "https://www.instagram.com/albinjoseph.dev/";
     const LINKEDIN_URL = "https://www.linkedin.com/in/albin-joseph-sfcc/";
     const TWITTER_URL = "https://twitter.com/albinjoseph_dev";
     const TRAILHEAD_URL = "https://trailblazer.me/id/albinjoseph";
@@ -31,7 +30,10 @@ function Footer() {
                     </div>
                     <div className="rights-declaration">
                         <p className="rights-text">
-                            &copy; All rights reserved to Albin Joseph
+                            &copy; All rights reserved to Albin Joseph, 2021
+                        </p>
+                        <p className="addres">
+                            Kannur, Kerala
                         </p>
                     </div>
                 </div>
