@@ -1,6 +1,7 @@
 const express = require('express');
 require('dotenv').config();
 const server = express();
+const path = require('path');
 
 // routes
 const content = require('./routes/content');
@@ -21,9 +22,17 @@ connection.on('open', () => console.log('DB Initialized!'));
 // middlewares
 server.use(express.json());
 
-server.get('/', (req, res) => {
-    res.send('Home Loaded');
-});
+if (process.env.NODE_ENV === 'production') {
+    server.use(express.static(path.join(__dirname, 'client', 'build')));
+    server.get('*', (req, res) => {
+        res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
+    }
+    );
+} else {
+    server.get('/', (req, res) => {
+        res.send('Home Loaded');
+    });
+}
 
 server.use('/content', content);
 
