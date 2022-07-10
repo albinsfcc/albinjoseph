@@ -10,7 +10,6 @@ router.get('/banners', async (req, res) => {
         const bannerData = await BannerContent.find();
         res.json(bannerData);
     } catch (error) {
-        console.log(error);
         res.send(error)
     }
 });
