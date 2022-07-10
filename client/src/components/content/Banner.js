@@ -4,12 +4,7 @@ import Carousel from 'react-bootstrap/Carousel';
 function Banner() {
     const [bannerData, setBannerData] = useState([]);
     useEffect(() => {
-        fetch('/api/content/banners', {
-            headers : { 
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-               }
-        })
+        fetch('/content/banners')
             .then((res) => res.json())
             .then((res) => {
                 setBannerData(res);
