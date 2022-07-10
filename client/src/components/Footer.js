@@ -19,13 +19,13 @@ function Footer() {
                     </h3>
                     <div className="social-media-icons-container">
                         <div className="social-media-icons">
-                            <a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer" class="icon-facebook"><i class="fab fa-facebook"></i></a>
-                            <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" class="icon-instagram"><i class="fab fa-instagram"></i></a>
-                            <a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer" class="icon-linkedin"><i class="fab fa-linkedin"></i></a>
-                            <a href={TRAILHEAD_URL} target="_blank" rel="noopener noreferrer" class="icon-salesforce"><i class="fab fa-salesforce"></i></a>
-                            <a href={TWITTER_URL} target="_blank" rel="noopener noreferrer" class="icon-twitter"><i class="fab fa-twitter"></i></a>
-                            <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer" class="icon-github"><i class="fab fa-github"></i></a>
-                            <a href={YOUTUBE_URL} target="_blank" rel="noopener noreferrer" class="icon-youtube"><i class="fab fa-youtube"></i></a>
+                            <a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer" className="icon-facebook"><i className="fab fa-facebook"></i></a>
+                            <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className="icon-instagram"><i className="fab fa-instagram"></i></a>
+                            <a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer" className="icon-linkedin"><i className="fab fa-linkedin"></i></a>
+                            <a href={TRAILHEAD_URL} target="_blank" rel="noopener noreferrer" className="icon-salesforce"><i className="fab fa-salesforce"></i></a>
+                            <a href={TWITTER_URL} target="_blank" rel="noopener noreferrer" className="icon-twitter"><i className="fab fa-twitter"></i></a>
+                            <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer" className="icon-github"><i className="fab fa-github"></i></a>
+                            <a href={YOUTUBE_URL} target="_blank" rel="noopener noreferrer" className="icon-youtube"><i className="fab fa-youtube"></i></a>
                         </div>
                     </div>
                     <div className="rights-declaration">
