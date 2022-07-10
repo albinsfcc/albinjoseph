@@ -7,7 +7,8 @@ function Banner() {
         fetch('/content/banners')
             .then((res) => res.json())
             .then((res) => {
-                setBannerData(res)
+                setBannerData(res);
+                console.log(res);
             });
         }, [])
         return (
