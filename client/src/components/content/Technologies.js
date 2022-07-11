@@ -1,5 +1,6 @@
 import React from 'react'
 import {Container, Row, Col} from 'react-bootstrap'
+import Carousel from 'react-bootstrap/Carousel';
 
 function Technologies() {
     var techList = [
@@ -61,11 +62,20 @@ function Technologies() {
                     </Col>
                 </Row>
                 <Row>
-                    <Col className="d-flex">
-                        {
-                            techList.map((tech, index) => {
-                                return <Technology key={index} icon={tech.icon} label={tech.label} color={tech.color}/> 
-                            })
+                    <Col className="d-flex carousel-wrapper">
+                    {window.innerWidth > 768 ? (techList.map((tech, index) => {
+                                    return <Technology key={index} icon={tech.icon} label={tech.label} color={tech.color}/> 
+                                })
+                            ) : (
+                                <Carousel variant="dark" interval={5000} pause={false} >
+                                    {techList.map((tech, index) => {
+                                        return <Carousel.Item key={index}>
+                                                <Technology icon={tech.icon} label={tech.label} color={tech.color}/> 
+                                                </Carousel.Item>
+                                        })
+                                    }
+                                </Carousel>
+							)
                         }
                     </Col>
                 </Row>

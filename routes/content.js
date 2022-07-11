@@ -1,5 +1,7 @@
 const express = require("express");
 const router = express.Router();
+const bodyParser = require('body-parser');
+const jsonParser = bodyParser.json();
 const BannerContent = require('../models/bannerData');
 
 /**
@@ -14,7 +16,8 @@ router.get('/banners', async (req, res) => {
     }
 });
 
-router.post('/banners', async (req, res) => {
+router.post('/banners', jsonParser, async (req, res) => {
+    console.log(req.body);
     try {
         const banner = new BannerContent ({
             imageURL: req.body.imageURL,

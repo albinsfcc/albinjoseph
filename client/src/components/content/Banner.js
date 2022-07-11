@@ -8,7 +8,6 @@ function Banner() {
             .then((res) => res.json())
             .then((res) => {
                 setBannerData(res);
-                console.log(res);
             });
         }, [])
         return (

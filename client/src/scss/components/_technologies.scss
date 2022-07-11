@@ -30,4 +30,19 @@
         }
 
     }
+
+    .carousel-wrapper {
+        @include media-breakpoint-down(lg) {
+            justify-content: center;
+
+            .carousel {
+                width: 100%;
+                padding-bottom: 30px;
+                
+                .technology-component {
+                    justify-content: center;
+                }
+            }
+        }
+    }
 }
