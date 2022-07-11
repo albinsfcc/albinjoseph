@@ -63,11 +63,11 @@ function Technologies() {
                 </Row>
                 <Row>
                     <Col className="d-flex carousel-wrapper">
-                    {window.innerWidth > 768 ? (techList.map((tech, index) => {
+                    {window.innerWidth > 992 ? (techList.map((tech, index) => {
                                     return <Technology key={index} icon={tech.icon} label={tech.label} color={tech.color}/> 
                                 })
                             ) : (
-                                <Carousel variant="dark" interval={5000} pause={false} >
+                                <Carousel interval={3000} pause={false} >
                                     {techList.map((tech, index) => {
                                         return <Carousel.Item key={index}>
                                                 <Technology icon={tech.icon} label={tech.label} color={tech.color}/> 

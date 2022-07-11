@@ -6,7 +6,7 @@ function Hero() {
         <div className="hero-banner d-flex">
             <Container>
                 <Row className="flex-column">
-                    <Col xs={6}>
+                    <Col xs={12} lg={6}>
                         <div className="left-content">
                             <h2>
                                 Hi, I'm Albin Joseph
@@ -16,7 +16,7 @@ function Hero() {
                             </h5>
                         </div>
                     </Col>
-                    <Col xs={6}>
+                    <Col xs={12} lg={6}>
                     </Col>
                 </Row>
             </Container>

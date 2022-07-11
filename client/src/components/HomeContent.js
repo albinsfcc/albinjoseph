@@ -11,6 +11,7 @@ function HomeContent() {
             <Cards />
             <Technologies />
             <Banner />
+            <marquee directon="left">Site development is in progress...</marquee>
         </div>
     )
 }
