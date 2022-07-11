@@ -5,7 +5,7 @@
     background: rgb(235,247,255);
     background: linear-gradient(180deg, $graychateau 0%, $blackperl 100%);
 
-    .col-6 {
+    .col-6, .col-12 {
         .left-content {
             padding: 2rem;
             text-align: end;
