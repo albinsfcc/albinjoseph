@@ -7,6 +7,18 @@
 
     .col-6, .col-12 {
         .left-content {
+            text-align: center;
+            .hero-image {
+                img {
+                    width: 147px;
+                    height: 147px;
+                    border-radius: 50%;
+                    box-shadow: inset 0 0 2px 4px $black;
+                }
+            }
+        }
+
+        .right-content {
             padding: 2rem;
             text-align: end;
             background: $aliceblue;
