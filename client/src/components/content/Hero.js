@@ -20,7 +20,7 @@ function Hero() {
                                 Hi, I'm Albin Joseph
                             </h2>
                             <h5>
-                                Salesforce Commerce Cloud Developer
+                               A Salesforce Commerce Cloud Developer
                             </h5>
                         </div>
                     </Col>
