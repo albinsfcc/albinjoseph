@@ -19,6 +19,8 @@ mongoose.connect(DBURI, connectionParams);
 const connection = mongoose.connection;
 connection.on('open', () => console.log('DB Initialized!'));
 
+server.use('/content', content);
+
 // middlewares
 server.use(express.json());
 
@@ -33,7 +35,4 @@ if (process.env.NODE_ENV === 'production') {
         res.send('Home Loaded');
     });
 }
-
-server.use('/content', content);
-
 server.listen(PORT, () => console.log(`Server is running in PORT: ${PORT}`));
