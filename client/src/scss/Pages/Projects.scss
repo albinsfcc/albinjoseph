@@ -1,0 +1,113 @@
+@import '../variables';
+
+.page.projects {
+    background-color: $aliceblue-glass;
+    .banner-main {
+        background-image: url('../../static/banner/Projects.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 350px;
+        display: flex;
+        align-items: flex-end;
+        @include media-breakpoint-down (lg) {
+            justify-content: center;
+            align-items: center;
+        }
+        
+        h1 {
+            padding-left: 200px;
+            @include media-breakpoint-down (lg) {
+                padding-left: 15px;
+                transform: translateY(100%);
+            }
+        }
+    }
+
+    .project-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        padding: 40px 0;
+        background-color: $black;
+
+        .project {
+            .project-image {
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 375px;
+                width: 375px;
+                background-color:   rgba(0, 0, 0, .6);
+                background-blend-mode: multiply;
+                transition: background-color .5s ease-in-out;
+
+                &.tmlewin {
+                    background-image: url('../../static/tiles/tml.jpg');
+                }
+                &.showpo {
+                    background-image: url('../../static/tiles/showpo.png');
+                }
+                &.twe {
+                    background-image: url('../../static/tiles/twe.jpg');
+                }
+                &.bardot {
+                    background-image: url('../../static/tiles/bardot.jpg');
+                }
+                &.t2tea {
+                    background-image: url('../../static/tiles/t2tea.jpg');
+                }
+                &.jets {
+                    background-image: url('../../static/tiles/jets.jpg');
+                }
+                &.birks {
+                    background-image: url('../../static/tiles/birks.jpg');
+                }
+
+
+                .project-info {
+                    display: flex;
+                    justify-content: center;
+                    color: $aliceblue;
+                    flex-direction: column;
+                    text-align: center;
+                    align-items: center;
+                    height: 100%;
+                    padding: 15px;
+                    transition: backdrop-filter .5s ease-in-out;
+                    backdrop-filter: blur(1px);
+                    &:hover {
+                        backdrop-filter: blur(10px);
+                    }
+
+                    h3 {
+                        font-size: $font-size-2;
+                        letter-spacing: 0.5px;
+                        width: 100%;
+                    }
+
+                    p {
+                        font-family: $comfortaa;
+                        font-size: 14px;                        margin-bottom: 0;
+                    }
+
+                    a {
+                        font-family: $comfortaa;
+                        font-size: 14px;
+                        color: $aliceblue;
+                        text-decoration: none;
+                        transition: color .5s ease-in-out;
+                        border: 1px solid $aliceblue;
+                        padding: 15px 30px;
+                        margin-top: 30px;
+                        background-color: rgba(0, 0, 0, .6);
+                        &:hover {
+                            color: $aliceblue-glass;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

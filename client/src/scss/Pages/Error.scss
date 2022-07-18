@@ -1,6 +1,7 @@
 @import '../../scss/variables';
 
 .error-page-bg {
+    padding-top: 100px;
     background-color: $error-bg;
     color: $white;
     min-height: calc(100vh - 400px);
