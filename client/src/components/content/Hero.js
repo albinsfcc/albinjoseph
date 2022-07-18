@@ -15,7 +15,7 @@ function Hero() {
                         </div>
                     </Col>
                     <Col lg={6} xs={12}>
-                        <div className="right-content"> 
+                        <div className="right-content m-auto m-lg-0"> 
                             <h2>
                                 Hi, I'm Albin Joseph
                             </h2>

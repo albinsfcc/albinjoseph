@@ -1,6 +1,25 @@
 import React from 'react';
 import {useState} from 'react';
 import {Container, Row, Col, Navbar, Nav} from 'react-bootstrap';
+import {Link} from 'react-router-dom';
+
+
+var menu = [{
+    name: 'Projects',
+    link: '/projects' 
+}, {
+    name: 'Experience',
+    link: '/experience'
+}, {
+    name: 'Resume',
+    link: '/resume'
+}, {
+    name: 'Skills',
+    link: '/skills'
+}, {
+    name: 'Contact',
+    link: '/contact'
+}];
 
 function Header() {
     return (
@@ -10,10 +29,9 @@ function Header() {
                     <Col>
                         <Navbar>
                             <Container fluid>
-                                <Navbar.Brand href="#home">Albin Joseph</Navbar.Brand>
+                                <Navbar.Brand><Link to="/">Albin Joseph</Link></Navbar.Brand>
                                 <Nav className="me-auto">
-                                    <Nav.Link href="#projects">Projects</Nav.Link>
-                                    <Nav.Link href="#contact">Contact</Nav.Link>
+                                    <NavList />
                                 </Nav>
                             </Container>
                             <Hamburger/>
@@ -39,8 +57,7 @@ function Hamburger() {
                         <i className="fa-solid fa-times"></i>
                     </div>
                     <ul className='menu-group'> 
-                        <li className='menu-item'><Nav.Link href="#projects">Projects</Nav.Link></li>
-                        <li className='menu-item'><Nav.Link href="#contact">Contact</Nav.Link></li>
+                        <NavList hamburger={setOpenHamburger}/>
                     </ul>
                 </div>
             )}
@@ -48,6 +65,16 @@ function Hamburger() {
             {openHamburger ? document.body.classList.add('no-scroll') : document.body.classList.remove('no-scroll')} 
         </div>
     )
+}
+
+ function NavList(setOpenHamburger) {
+  return (
+    menu.map((item, index) => {
+        return (
+            <li key={index} className='menu-item'><Link className='nav-link' to={item.link} onClick={() => setOpenHamburger(false)}>{item.name}</Link></li>
+        )
+    })
+  )
 }
 
 export default Header

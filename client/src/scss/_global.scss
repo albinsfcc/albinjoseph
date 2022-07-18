@@ -26,6 +26,33 @@ html {
       font-family: $comfortaa;
       color: $primary;
     }
+
+    .page {
+      padding-top: 100px;
+    }
+
+    .btn {
+      background-color: $blackperl;
+      color: $white;
+      padding: .5rem 1rem;
+      font-size: $font-size-3;
+      font-family: $comfortaa;
+      transition: all .3s ease-in-out;
+      &:hover {
+        color: $aliceblue;
+        background-color: $fiord;
+      }
+    }
+
+    a {
+      color: $primary;
+      text-decoration: none;
+      transition: all .3s ease-in-out;
+      cursor: pointer;
+      &:hover {
+        color: aliceblue;
+      }
+    }
   }
   
 

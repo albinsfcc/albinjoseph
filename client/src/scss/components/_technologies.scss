@@ -32,6 +32,11 @@
     }
 
     .carousel-wrapper {
+        @include media-breakpoint-up(lg) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
         @include media-breakpoint-down(lg) {
             justify-content: center;
 

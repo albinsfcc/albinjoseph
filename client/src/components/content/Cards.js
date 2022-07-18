@@ -22,7 +22,7 @@ function Cards() {
                 <Row>
                     <Col>
                         <h3>
-                            What I can do?
+                            What do can do?
                         </h3>
                     </Col>
                 </Row>
